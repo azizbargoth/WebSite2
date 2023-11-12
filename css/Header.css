@@ -1,0 +1,143 @@
+
+header{
+    padding: 40px 0;
+
+}
+.header-conent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-conent img{
+   flex: 1;
+   max-width: 130px;
+}
+
+nav{
+    flex: 3;
+   text-align: center;
+}
+    .header-list{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content:space-around; 
+        align-items: center;
+    }
+    .header-conent nav ul li{
+        transform-style: preserve-3d;
+        position: relative;
+        list-style: none;
+    }
+         .header-link-item {
+            display: block;
+            color: rgb(110, 35, 12);
+            font-size: 20px;
+            font-weight: bold; 
+            padding: 5px 10px;
+        }     
+            .header-list .dropdown:hover .dropdown-menu{
+            transform: scale3d(1,1,1);
+            visibility: visible;
+            opacity: 1;
+        }
+/*---------------------DROPDOWN ---------------------------------------------*/
+            .dropdown-menu ul{
+                display: table-header-group;
+                text-align: left;
+                
+            }
+            .dropdown-menu ul li:first-child a {
+                display: block;
+                 padding: 0px 10px;
+                 width: 110px;
+            }
+            .dropdown-menu ul li {
+                display: inline-block;
+                line-height: 1.5;
+            }
+            .table-line{
+                width: 55%;
+                height: 2px;
+                background-color: brown;
+            }
+
+.dropdown{
+    position: relative;
+    transform-style: preserve-3d;
+}
+ .dropdown-menu{
+    display: flex;
+    position: absolute;
+    border: 2px solid  rgb(110, 35, 12);
+    padding: 10px;
+    margin-top: 5px;
+    transform: scale3d(0,0,0);
+    transition:  1.5s;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top left;
+    /* background-color:ivory */
+} 
+/*------------------After Befor arounded line----------------------*/
+    .header-link-item:before,
+    .header-link-item:after{
+    content:"";
+    position: absolute;
+    border-style: solid; 
+    left: 0;
+    top:0; 
+    transition:  1s;
+    }
+ .header-link-item:before{
+        border-width: 0 2px;
+        height: 100%; 
+        width: 97%;
+        transform: scale3d(1,0,1);
+    }
+   .header-link-item:hover:before{
+     transform: scale3d(1,1,1);
+    }
+  .header-link-item::after{
+    border-width: 2px 0;
+    height: 93%; 
+    width: 100%;
+    transform: scale3d(0,1,1);
+    transform-origin: left;
+    }
+   .header-link-item:hover::after{
+     transform: scale3d(1,1,1);
+     transition-delay: 0.2s;
+    } 
+/*--------------LOGIN--------------------------------------*/
+.login{
+    flex: 1;
+    text-align: right;
+}
+.login-list{
+    display: flex;
+    list-style-type: none; 
+    flex-wrap: wrap; 
+    justify-content:space-around; 
+    align-items: center;
+}
+.login ul li:last-child i {
+ position: relative;
+ margin-right: 25px;
+}
+ .login ul li:last-child i::after{
+    position: absolute;
+    content: "0";
+    background-color:brown;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 13px;
+    bottom: -4px;
+}
+    /* ---------------------img---------------- */
+    .image-banner .container img{
+        width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: "Sofia", sans-serif;
+    }

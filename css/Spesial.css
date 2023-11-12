@@ -1,0 +1,173 @@
+.spesial-item-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+.spesail-item{
+     position: relative; 
+}
+.spesail-item img{
+    width: 100%;
+   margin-bottom: 15px;
+}
+.spesail-item h3,h4{
+padding: 0px 5px;
+}
+.spesail-item h3{
+    color: rgb(48, 46, 46);
+    font-weight: normal;
+}
+.spesail-item h4{
+    display: inline-block;
+    margin-right: 10px; 
+    font-size: 18px;
+}
+.spesail-item i{
+    display: block;
+    color: aliceblue;
+    background-color:var(--icocoler);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    visibility:hidden ;
+    right: 0;
+    bottom: 0;
+}
+.spesail-item:hover i{
+    visibility: visible;
+}
+/* --------------------Spesial Discount------------------------------- */
+.spesial-discount{
+    position: relative;
+    display: flex;
+    margin: 10px 0px;
+}
+.descount-description{
+    flex: 2;
+    padding: 10px 15px;
+    position: relative;
+    background-color:rgb(214, 204, 204);
+    margin: 0 5px;
+}
+.top{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+.descount-description i{
+    position: absolute;
+    color: rgb(128, 73, 0);
+    font-size:3rem ;
+    left: 0;
+    top: 0;
+}
+.descount-description h2{
+    display: inline-block;
+}
+.descount-description h5{
+    color: rgb(46, 46, 46);
+}
+.desc-line {
+text-align: right;
+position: absolute;
+bottom: 10%;
+right: 5%;
+}
+.desc-line span{
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background: brown;
+        margin-left: 10px;
+}
+.discount-item{
+        position: relative;
+        flex: 1;
+        margin: 15px 3px;
+        transition: 0.5s ;
+        height: 300px;
+        
+        /* transform: scale(0.9,0.9); */
+    }
+.desc-img{
+    position: relative;
+}
+.diesc-item-lable {
+    position: absolute;
+    top:0;
+    padding: 20px 15px 0px;
+}
+.item1{
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    margin:0 10px;
+    /* transition: 0.5s; */
+}
+.item2{
+    /* background-color: black; */
+    background-image: url(../images/cms-banner-2.jpg);
+    background-size: cover;
+    margin:0 10px;
+    /* transition: 0.5s; */
+   }
+   
+.discount-item:hover{
+    transform: scale(1.07,1.07);
+}
+/* -----------------------------------spesial strip------------------------ */
+.strip{
+    position: relative;
+    display: flex;
+    margin: 40px 0;
+}
+.strip-item{
+    background:white;
+    flex: 1;
+    text-align: center;
+   border-left:  1px solid black;
+}
+.strip-ico{
+background-image: url(../images/service-icon.png);
+height: 55px;
+background-repeat: no-repeat;
+background-position-x: 50%;
+transition: 0.7s;
+}
+.strip-info{
+color: gray;
+}
+.strip-item:first-child{
+    border-left: 0px;
+}
+.icon-2{
+    background-position-y:-183px;
+}
+.icon-3{
+    background-position-y:-370px;
+}
+.icon-4{
+    background-position-y:-554px;
+}
+.icon-5{
+    background-position-y:-740px;
+}
+.icon-1:hover{
+    background-position-y:-92px
+}
+.icon-2:hover{
+    background-position-y:-275px
+}
+.icon-3:hover{
+    background-position-y:-462px
+}
+.icon-4:hover{
+    background-position-y:-646px
+}
+.icon-5:hover{
+    background-position-y:-832px
+}
+.strip-info h3{
+    color: black;
+}
